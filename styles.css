@@ -107,13 +107,29 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #333;
   text-decoration: none;
   padding: 10px;
 }
 
 nav ul li a:hover {
   background-color: #666;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
 }
 
 main {
