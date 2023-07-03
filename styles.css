@@ -142,24 +142,6 @@ h1 {
   color: #333;
 }
 
-.about-tabs {
-  margin-top: 20px;
-}
-
-.tablink {
-  background-color: #f1f1f1;
-  color: #333;
-  padding: 28px 32px;
-  border: none;
-  cursor: pointer;
-}
-
-.tabcontent {
-  display: none;
-  padding: 50px;
-  background-color: #fff;
-  border: 1px solid #ccc;
-}
 
 .social-media-links {
   list-style: none;
