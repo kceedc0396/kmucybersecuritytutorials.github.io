@@ -198,18 +198,54 @@ p {
   background-color: #666;
 }
 
-  .video-container {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  .youtube-video {
+  width: 560px; /* Adjust the width as needed */
+  height: 315px; /* Adjust the height as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.video-container iframe {
+.youtube-video[data-video-id="VIDEO_ID"] {
+  background-image: url("https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg");
+  /* Replace VIDEO_ID with the actual ID of the YouTube video */
+  /* You can choose different thumbnail qualities: default, hqdefault, mqdefault, sddefault, maxresdefault */
+  /* For example: url("https://img.youtube.com/vi/VIDEO_ID/hqdefault.jpg") */
+}
+
+.youtube-video:hover {
+  cursor: pointer;
+}
+
+.youtube-video::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust the background color and transparency as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
+.youtube-video:hover::before {
+  opacity: 1;
+}
+
+.youtube-video::after {
+  content: "\f144";
+  /* Adjust the content with a suitable icon or text */
+  font-family: "Font Awesome";
+  /* You need to include Font Awesome or a similar icon font */
+  font-size: 64px;
+  color: #fff;
+}
