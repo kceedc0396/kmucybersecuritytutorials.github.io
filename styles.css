@@ -1,0 +1,174 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+
+.youtube-links {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.youtube-links h2 {
+  text-align: center;
+}
+
+.youtube-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.youtube-links li {
+  margin-bottom: 10px;
+}
+
+.youtube-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.youtube-links a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #666;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.about-tabs {
+  margin-top: 20px;
+}
+
+.tablink {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.social-media-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-media-links li {
+  margin-right: 10px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.social-media-links a:hover {
+  background-color: #666;
+}
