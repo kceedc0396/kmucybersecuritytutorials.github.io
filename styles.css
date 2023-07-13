@@ -260,3 +260,19 @@ p {
   color: #666;
   margin-bottom: 10px;
 }
+
+  section {
+  background-color: black;
+  color: yellow;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+section h2 {
+  color: yellow;
+}
+
+section p, section li {
+  margin-bottom: 10px;
+}
+
