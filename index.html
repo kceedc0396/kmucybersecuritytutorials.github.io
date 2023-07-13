@@ -81,142 +81,50 @@ Start exploring our tutorials today and unlock the potential of cyber security e
 	  <div class="youtube-video">
   <iframe width="100%" height="500" src="https://www.youtube.com/embed/fMJwzdKZPKw" frameborder="0" allowfullscreen></iframe>
 </div>
-	<h>Network Security Notes on the OSI Refrence Model</h>
-	<p>OSI Reference Model :  
-The Open Systems Interconnection model (OSI Model) was first introduced in the late 1970s.  It is a reference model for designing a network architecture that is robust and flexible. It is a universally accepted model which describes the communication of various applications over the internet.
+	
+<section id="lyrics">
+  <h2>OSI Reference Model</h2>
+  <p>The Open Systems Interconnection model (OSI Model) was first introduced in the late 1970s. It is a reference model for designing a network architecture that is robust and flexible. It is a universally accepted model which describes the communication of various applications over the internet.</p>
+  <p>The OSI Model is divided into 7 layers: In order to reduce the design complexity, networks are organized as stacks of layers and levels. Each layer has its own set of functions which aids in the successful transfer of data. Each layer passes the data to the layer immediately below or above it.</p>
+  <p>The Layers are as follows:</p>
+  <ol>
+    <li>Application Layer – It consists of application layer protocol that allows network applications to work correctly in the network</li>
+    <li>Presentation Layer – It receives the data from the application layer and is responsible for Translation, Data Compression, and Encryption/Decryption of the data</li>
+    <li>Session Layer – It is responsible for setting up and managing connections. Its functions include Authentication, Authorization, and Session Restoration</li>
+    <li>Transport Layer – It receives the data from the Session Layer. It is responsible for the delivery of a message from one process to another. It controls the reliability of communication through flow control, error control, and segmentation. It has two protocols namely TCP and UDP</li>
+    <li>Network Layer – It is responsible for the transmission of data segments from one computer to another located in different networks</li>
+    <li>Data Link Layer – Responsible for moving frames from one hop to another</li>
+    <li>Physical Layer – It is responsible for converting the binary bits into signals and transmitting over local media</li>
+  </ol>
+</section>
 
-The OSI Model is divided into 7 layers :
+<section id="tcpip">
+  <h2>TCP/IP Reference Model</h2>
+  <p>The layers in the TCP/IP protocol suite do not exactly match those in the OSI model. The original TCP/IP protocol suite was defined as having four layers: host to network, internet, transport, and application. TCP/IP Reference Model is the practical implementation of the theoretical OSI Model.</p>
+  <p>Transport Layer: The layer below the Session Layer is called the Transport Layer. The Data in this layer is called a segment. It is responsible for the delivery of a message from one process to another. It is also responsible for reliable communication through flow control, error control, and segmentation. Some of the most important protocols are Transmission Control Protocol (TCP) and User Datagram Protocol (UDP).</p>
+  <p>Transmission Control Protocol (TCP): It is a connection-oriented protocol that is used for the reliable transfer of data from one process to another process. It takes the help of the Port numbers for transmission. It uses flow control and error control mechanisms at the transport level. There are three phases in which TCP transmits the data between the sender and receiver: Connection Establishment, Data transfer, and Connection termination.</p>
+  <p>User Datagram Protocol (UDP): It is a transport layer protocol. It is an unreliable and connectionless protocol. It is much faster, simpler, and efficient than TCP. However, it doesn’t check errors due to which Bandwidth is saved. It is widely used in real-time services like video game, voice, or video communication.</p>
+</section>
 
-In order to reduce the design complexity, networks are organized as stacks of layers and levels.
-Each layer has its own set of  functions which aids in the successful transfer of data
-Each layer passes the data to the layer immediately below or above it.
-The Layers are as follows : 
+<section id="tcp-examples">
+  <h2>Real-Life Examples of TCP</h2>
+  <ul>
+    <li>Text Communication – We all are aware of the importance of Text Communication in the present times. Any discrepancy in texting between sender and receiver cannot be tolerated. Hence TCP is used in Text Communication due to its reliable transmission, error control, and in order receiving of the data. Example: Whatsapp, Instagram, Google Chat, iMessage.</li>
+    <li>Transfer of files or FTP – TCP is used in File transfer when we cannot tolerate the loss of data and receiving the data in incorrect order is of utmost importance. FTP uses two TCP connections: control connection and data connection. Control Connection: FTP sends information like user identification and passwords. Data Connection: In this connection, files are sent over the network. Example: FileZilla Client and Server.</li>
+    <li>HyperText Transfer Protocol (HTTP) – It is used to access the data present on the World Wide Web. It uses TCP protocol for accessing the web pages present on the internet due to the fact that TCP provides in order data, error control, and flow control, and retransmission of data segments.</li>
+    <li>Simple Mail Transfer Protocol (SMTP) – It is an application layer protocol that is used to send Emails from one system to another. SMTP uses the services of TCP to start a connection with the SMTP server. Once the SMTP server accepts the connection request, it allows the sender to send the mails. Example: Yahoo, Gmail, Outlook, etc.</li>
+  </ul>
+</section>
 
-<b>Application Layer</b> –
-It consists of  application layer protocol that allows network applications to work correctly in the  network
- 
-<b>Presentation Layer</b> –
-It receives the data from the application layer and is responsible for Translation, Data Compression, and Encryption/Decryption of the data
- 
-<b>Session Layer</b> –
-It is responsible for setting up and managing connections.  Its functions include Authentication, Authorization, and Session Restoration.
- 
-<b>Transport Layer</b> –
-It receives the data from the Session Layer. It is responsible for the delivery of a message from one process to another. It controls the reliability of communication through flow control, error control, and segmentation. It has two protocols namely TCP and UDP.
- 
-<b>Network Layer</b> –
-It is responsible for the transmission of data segments from one computer to another located in different networks 
- 
-<b>Data Link Layer</b> –
-Responsible for moving frames from one hop to another.
- 
-<b>Physical Layer</b> –
-It is responsible for converting the binary bits into signals and transmitting over local media
-TCP/IP Reference Model :
-The layers in the TCP/IP protocol suite do not exactly match those in the OSI model The original TCP/IP protocol suite was defined as having four layers host to network internet transport and application. TCP/IP Reference Model is the practical implementation of the theoretical OSI Model
-
-<i>Transport Layer</i> : 
-The layer below the Session Layer is called the Transport Layer. The Data in this layer is called a segment. It is responsible for the delivery of a message from one process to another. It is also responsible for reliable communication through flow control, error control, and segmentation. Some of the most important protocols are Transmission Control Protocol (TCP) and User Datagram Protocol(UDP). It does two types of Transmission i.e Connection-Oriented Transmission and Connectionless Transmission which are carried out by TCP and UDP respectively.
-
-Some of the Responsibilities of Transport  Layer are as Follows :
-
-End to End delivery
-Reliability
-Error Control
-Flow Control
-Multiplexing and Demultiplexing
-<i>Transmission Control  Protocol (TCP)</i> :
-It is a connection-oriented protocol that is used for the reliable transfer of data from one process to another process. It takes the help of the Port numbers for transmission. It uses flow control and error control mechanisms at the transport level. There are three phases in which TCP transmits the data between the sender and receiver which is as follows:
-
-Connection Establishment – 
-It takes the help of 3 way handshaking mechanism for Connection Establishment which involves the exchange of SYN, ACK, and window size
-Data transfer – 
-In this step, the transmission of data occurs
-Connection termination – 
-Here the transmission of data gets terminated by sending a FIN packet to the receiver.
-Services offered by the TCP are as follows :
-
-Process to Process or end to end Communication using Port numbers
-Transmits the data as a stream of bytes from source to destination
-It groups the data that comes from the application into packets called Segments. It also adds a header to each data segment and sends it to the network layer
-It offers Full Duplex communications
-Reliable Service: TCP uses an acknowledgment mechanism which makes it reliable
-It offers Flow control, Error control, and Congestion control too.
-Advantages :
-
-Flow Control
-Error Control
-Congestion Control
-Process to Process Communication
-Inorder delivery of data segments
-Disadvantages :
-
-The data segments don’t get transmitted immediately
-More overhead(20-60Bytes)
-It has a large TCP Header
-<i>User Datagram Protocol (UDP)</i>i> :
-It is a transport layer protocol. It is an unreliable and connectionless protocol. It is much faster, simpler, and efficient than TCP. However, it doesn’t check errors due to which Bandwidth is saved. It is widely used in real-time services like videogame, voice, or video communication
-The packets sent by the UDP are called user datagrams.
-
-Services offered by the UDP are as follows :
-
-Process to Process port to port transmission of segments
-Connectionless and minimum overhead Protocol
-Fast and simple transmission
-No flow and error control, applications using UDP services are responsible for providing them
-UDP encapsulates and decapsulates the messages.
-Advantages :
- 
-
-The packet created by UDP is relatively smaller than that of TCP(UDP Header: 8 bytes)
-Connectionless Transmission
-It is Faster, Simpler and Efficient
-Disadvantages : 
-
-There is no guarantee that the sender will receive the data
-Lack of proper Error checking mechanisms
-The lost packets will not be retransmitted
-There is a possibility of receiving out of order packets
-Real-Life Examples of TCP :
-
-Text Communication –
-We all are aware of the importance of Text Communication in the present times. Any discrepancy in texting between sender and receiver cannot be tolerated. Hence TCP is used in Text Communication due to its reliable transmission, error control, and in order receiving of the data. 
-Example : Whatsapp, Instagram, Google Chat,iMessage.
- 
-
-Transfer of files or FTP –
-TCP is used in File transfer when we cannot tolerate the loss of data and receiving the data incorrect order is of utmost importance. FTP uses two TCP connections i.e control connection and data connection. 
-Control Connection : FTP sends information like user identification and passwords.
-Data Connection: In this connection, files are sent over the network.
-Ex : FileZilla Client and Server
- 
-HyperText Transfer Protocol (HTTP) –
-It is used to access the data present on the World Wide Web. It uses TCP protocol for accessing the web pages present on the internet due to the fact that TCP provides inorder data, error control and flow control, and retransmission of data segments.
- 
-Simple Mail Transfer Protocol(SMTP)
-It is an application layer protocol that is used to send Emails from one system to another. SMTP uses the services of TCP to start a connection with the SMTP server. Once the SMTP server accepts the connection request, it allows the sender to send the mails.
-Ex: Yahoo, Gmail, Outlook, etc
-Real-Life Examples of UDP :
-
-Online Games –
-Most of the online games we play use the services of User Datagram Protocol. Since any amount of delay cannot be tolerated in online games UDP is widely used over TCP which is quite slower. UDP doesn’t retransmit the lost data and is a connectionless protocol due to which it is much faster.
-Ex : All online games
- 
-Video Conferencing –
-Video Conferencing apps like Skype, Gmeet, Zoom, all use the services of UDP due to the fact that they are real-time applications and any delay in receiving the data cannot be tolerated.
-Ex: Skype, Google Meet, zoom, and Facetime.
- 
-Voice Over IP(VoIP) –
-It is similar to Video Conferencing, where apps like Viber, Whatsapp, Google Hangouts use UDP for converting our voice to digital data and transmit it over the network, hence the name VoIP.
-Ex : Viber, Whatsapp Voice calling, Wi-Fi calling.
- 
-Domain Name System(DNS) –
-It is a service used for mapping domain names to their corresponding IP address. It is used by the application layer. It can also be looked at as a distributed DataBase that has a hierarchical name Server. DNS uses UDP for fetching the corresponding IP address due to the following reasons:
-a) UDP is much faster than TCP. After all, speed matters a lot when loading a webpage 
-b) DNS requests are typically small requests and can be accommodated inside UDP segments(Header).
-c) Even though UDP is unreliable, it can be achieved in the application layer too
-
-Hence, these were the Real-Life Examples of TCP and UDP.</p>
+<section id="udp-examples">
+  <h2>Real-Life Examples of UDP</h2>
+  <ul>
+    <li>Online Games – Most of the online games we play use the services of User Datagram Protocol. Since any amount of delay cannot be tolerated in online games, UDP is widely used over TCP, which is quite slower. UDP doesn’t retransmit the lost data and is a connectionless protocol due to which it is much faster. Example: All online games.</li>
+    <li>Video Conferencing – Video Conferencing apps like Skype, Gmeet, Zoom, all use the services of UDP due to the fact that they are real-time applications and any delay in receiving the data cannot be tolerated. Example: Skype, Google Meet, Zoom, and Facetime.</li>
+    <li>Voice Over IP (VoIP) – It is similar to Video Conferencing, where apps like Viber, Whatsapp, Google Hangouts use UDP for converting our voice to digital data and transmit it over the network, hence the name VoIP. Example: Viber, Whatsapp Voice calling, Wi-Fi calling.</li>
+    <li>Domain Name System (DNS) – It is a service used for mapping domain names to their corresponding IP address. It is used by the application layer. DNS uses UDP for fetching the corresponding IP address due to its speed and small request sizes. Example: DNS lookup requests.</li>
+  </ul>
+</section>
 
 	  
   <h1>Upload Lecture Slides or Cyber Security related materials</h1>
