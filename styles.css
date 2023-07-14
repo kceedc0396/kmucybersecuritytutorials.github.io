@@ -276,3 +276,10 @@ section p, section li {
   margin-bottom: 10px;
 }
 
+  .featured-picture {
+  flex-basis: 30%;
+  padding: 20px;
+  background-color: black;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
